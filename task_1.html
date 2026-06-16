@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        nav{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: black;
+        }
+
+        @media(min-width:1024px){
+            nav{
+                flex-direction: row;
+                gap: 30px;
+            }
+        }
+
+        
+        img{
+            width: 300px;
+            border-radius: 20px; /* Use 20px if roll no is odd */
+        }
+
+        
+        video{
+            width: 50vw;
+            padding: 10px;
+            background-color: blue; /* Change based on roll number */
+        }
+
+        
+        table{
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        th{
+            background-color: lightblue;
+        }
+
+        
+        button{
+            border: none;
+            padding: 12px 20px;
+            background-color: blue; /* Same as video */
+            color: white;
+            margin: 20px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            opacity: 0.8;
+        }
+
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .box{
+            background-color: lightcoral;
+            padding: 20px;
+            text-align: center;
+        }
+
+        
+        @media(max-width:600px){
+            .grid{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#"></a>
+        <a href="#">Help</a>
+    </nav>
+
+    
+    <h1>Responsive Website</h1>
+
+    <img src="img4.jpg" alt="Sample Image">
+
+    <br><br>
+
+    <video controls>
+        <source src="kerala.mp4" type="video/mp4">
+    </video>
+
+    <table>
+        <tr>
+            <th>1</th>
+            <td>some text</td>
+            <td>some text</td>
+        </tr>
+        <tr>
+            <th>2</th>
+            <td>some text</td>
+            <td>some text</td>
+        </tr>
+        <tr>
+            <th>3</th>
+            <td>some text</td>
+            <td>some text</td>
+        </tr>
+    </table>
+
+    <button>Click Me</button>
+
+    
+    <div class="grid">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+    </div>
+
+</body>
+</html>
